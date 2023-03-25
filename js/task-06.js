@@ -13,7 +13,6 @@ input.addEventListener('blur', onBlur);
 
 function onBlur(event) {
     if (Number(input.dataset.length) === event.currentTarget.value.length) {
-        console.dir(input);
         input.classList.remove('invalid');
         input.classList.add('valid');
     } else {
